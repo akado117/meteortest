@@ -12,9 +12,19 @@
 				{{>task}}
 			{{/each}}
 	</ul>
+
+	{{>derp}}
 </div>
 </body>
 
 <template name="task">
-	<li>{{text}}</li> 
+	<li>{{text}}</li>
+	{{#if text1}}
+	<li>{{text1}}</li>
+	{{/if}} 
+</template>
+<template name='derp'>
+	<h1>{{words}}</h1>
+	<h3>{{words}}</h3>
+	<h2>{{herps}}</h2>
 </template>

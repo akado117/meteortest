@@ -20,12 +20,16 @@ if (Meteor.isClient) {
 
 Template.body.helpers({
   tasks: [
-  {text: "task1"},
+  {text: "task1", text1: "extratext"},
   {text: "task2"},
   {text: "task3"}
   ]
 });
 
+Template.derp.helpers({
+  words: "somesillydorksthingssdfjngklsdfjhgjklsdfnhgjkn",
+  herps: "SomeCreativeTxt"
+});
 
 /*
 if (Meteor.isServer) {
